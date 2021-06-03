@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="PWA REPORT">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" type="module"></script>
+    <!--        PWA         -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar" content="white">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="assets/icons/icon-96.png">
+    <title>Web Component</title>
+</head>
+
+<body>
+    <rp-app>
+        <h1 slot="header">Header</h1>
+
+        <div slot="card">
+            <span class="card__title">Titre du rapport</span>
+            <div class="card__desc">
+                <span>Rapport : pas cool les cables au sol -</span>
+                <span>- Categories : Maintenance</span>
+            </div>
+        </div>
+        
+        <div slot="card">
+            <span class="card__title">Titre du rapport</span>
+            <div class="card__desc">
+                <span>Rapport : pas cool les cables au sol -</span>
+                <span>- Categories : Maintenance</span>
+            </div>
+        </div>
+
+        
+        <div slot="footer">
+            <div><a href="user.html"><img id="svg__user" src="assets/img/user.svg" alt="user"></a></div>
+        </div>
+        <div slot="footer">
+            <div><a href="report.html"><img id="svg__add" src="assets/img/plus.svg" alt="add"></a></div>
+        </div>
+    </rp-app>
+</body>
+
+</html>
